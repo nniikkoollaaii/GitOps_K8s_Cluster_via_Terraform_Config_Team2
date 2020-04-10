@@ -16,3 +16,7 @@ spec:
   rollback:
     enable: true
     wait: true
+  valuesFrom:
+  - chartFileRef:
+      path: values.conf.prod.yaml
+      optional: false

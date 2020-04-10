@@ -10,6 +10,13 @@ spec:
     ref: develop
     secretRef: 
       name: "git-auth"
-    releaseName: example-app-dev-stage
-    version: 1.0.0
-    targetNamespace: team2-develop
+  releaseName: example-app-dev-stage
+  version: 1.0.0
+  targetNamespace: team2-develop
+  rollback:
+    enable: true
+    wait: true
+  valuesFrom:
+  - chartFileRef:
+      path: values.conf.dev.yaml
+      optional: false
