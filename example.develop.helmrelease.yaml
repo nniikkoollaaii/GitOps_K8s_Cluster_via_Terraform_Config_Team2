@@ -12,7 +12,7 @@ spec:
       name: "git-auth"
   releaseName: example-app-dev-stage
   version: 1.0.0
-  targetNamespace: team2-develop
+  targetNamespace: team2-dev
   rollback:
     enable: true
     wait: true
